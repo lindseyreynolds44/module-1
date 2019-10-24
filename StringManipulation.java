@@ -14,8 +14,8 @@ import java.util.Scanner;
 public class StringManipulation
 {
    // Final variables for the minimum and maximum hours of work for the class
-   private static final int MIN_HOURS = 12;
-   private static final int MAX_HOURS = 20;
+   public static final int MIN_HOURS = 12;
+   public static final int MAX_HOURS = 20;
    
    public static void main(String[] args) 
    {
@@ -28,6 +28,8 @@ public class StringManipulation
       String firstName = keyboard.next();
       String lastName = keyboard.next();
       
+      // Adding new text to this file
+      
       // Creates a new variable to store the user's full name
       String fullName = firstName + " " + lastName;
 
@@ -37,7 +39,7 @@ public class StringManipulation
          " characters long.");
       System.out.println("UPPER CASE: " + fullName.toUpperCase());
       System.out.println("lower case: " + fullName.toLowerCase() + "\n");
-      
+   
       // Print out how long the user should be studying per week and then 
       // ask how much time they spend studying, including 3 decimal places
       System.out.printf("You should be spending %d to %d hours per week on "
